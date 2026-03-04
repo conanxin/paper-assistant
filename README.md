@@ -1,5 +1,8 @@
 # Paper Assistant
 
+[![CI](https://github.com/conanxin/paper-assistant/actions/workflows/ci.yml/badge.svg)](https://github.com/conanxin/paper-assistant/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 本地运行的论文精读助手（Web GUI）。支持输入论文链接或上传 PDF，输出结构化解读、引用审计，并可一键保存到 Obsidian。
 
 ## Features
