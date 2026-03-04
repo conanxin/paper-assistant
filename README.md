@@ -5,6 +5,22 @@
 
 本地运行的论文精读助手（Web GUI）。支持输入论文链接或上传 PDF，输出结构化解读、引用审计，并可一键保存到 Obsidian。
 
+## Screenshots / Demo
+
+> 你可以把界面截图或演示 GIF 放到 `docs/assets/`，README 会自动展示。
+
+### UI Preview（占位）
+
+- 首页输入区：`docs/assets/ui-home.png`
+- 输出与审计区：`docs/assets/ui-result.png`
+- 保存成功状态：`docs/assets/ui-save.png`
+
+### GIF Demo（占位）
+
+![Demo](docs/assets/demo.gif)
+
+> 如果 `demo.gif` 尚未添加，GitHub 上会显示为 broken image，这是正常占位行为。
+
 ## Features
 
 - URL 输入（arXiv / 其他可访问论文页）
