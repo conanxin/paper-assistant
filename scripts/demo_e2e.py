@@ -9,7 +9,8 @@ from src.pipeline import PaperAssistantPipeline
 
 def main() -> None:
     url = "https://arxiv.org/abs/2601.03220v1"
-    out_dir = Path("/mnt/d/obsidian_nov/nov/paper-assistant/evidence")
+    # Use repo-relative path so CI runners (GitHub Actions) can write artifacts reliably
+    out_dir = Path(__file__).resolve().parent.parent / "evidence"
     out_dir.mkdir(parents=True, exist_ok=True)
 
     pipeline = PaperAssistantPipeline()
