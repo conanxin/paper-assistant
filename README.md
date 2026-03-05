@@ -120,6 +120,99 @@ PYTHONPATH=. python3 scripts/demo_e2e.py
 - 链接抓取受目标站点反爬策略影响
 - 非结构化 PDF 可能需要 OCR 预处理
 
+## Open-Source Project Scope（论文 → 图像叙事）
+
+本项目已从“论文精读助手”扩展为一个可演进的 **Research-to-Visual-Narrative Pipeline**：
+
+- 输入论文链接/PDF
+- 自动生成研究卡片（问题/方法/结论/限制）
+- 自动生成 10~15 页图像叙事分镜与文案
+- 提供页级证据映射（每页主张可追溯到原文）
+- 连接免费出图后端生成视觉草图
+- 合成初版 PDF，支持人工审校后发布
+
+### Why this project
+
+学术内容往往“有价值但难传播”。本项目希望在 **可读性、可信度、可追溯性** 三者间取得平衡，让研究更高效地走向公众。
+
+---
+
+## Current Progress（截至 2026-03-05）
+
+### ✅ 已完成
+
+1. **Context FS 治理基础设施**（可追溯、可评估、可巡检）
+   - `context_manifest.json`
+   - `analysis.md`
+   - `evaluation.json`
+   - `memory_delta.md`
+   - `run_log.md`
+
+2. **自动化脚本（M1-M4）**
+   - `scripts/context_constructor.py`
+   - `scripts/context_updater.py`
+   - `scripts/context_evaluator.py`
+   - `scripts/context_healthcheck.py`
+
+3. **流程验收通过**
+   - 3 个真实任务样本跑通
+   - 结构与质量巡检通过
+
+4. **图像叙事方法资产**
+   - 12 页分镜骨架
+   - 逐页可发布文案模板
+   - 证据映射表
+   - 线框坐标与页面 JSON 模板
+
+### 🚧 进行中
+
+- Web MVP（输入页 / 任务进度页 / 结果审校页）
+- 免费后端出图接入与容错
+
+---
+
+## Vision
+
+打造一个开源的“论文传播编译器”：
+
+> 研究者提交论文 → 系统生成可发布图像叙事 → 社会公众更快理解研究价值。
+
+长期目标：
+
+- 多语言（中英双语）
+- 多体裁输出（漫画、图解长文、课程讲义）
+- 协作审校（研究者 + 编辑 + 设计师）
+- 模板生态（叙事模板、视觉风格包、证据评估器）
+
+---
+
+## Roadmap
+
+### v0.1 (MVP)
+- Web 三页闭环：输入→进度→结果
+- 自动生成研究卡片、分镜脚本、证据映射
+- 草图出图 + 初版 PDF 合成
+
+### v0.2
+- 页级编辑与单页重绘
+- QA 报告（事实一致性/可读性/视觉一致性）
+
+### v0.3
+- 多后端渲染（免费优先 + fallback）
+- 团队协作审校与发布归档
+
+---
+
+## Contributing Focus
+
+欢迎贡献以下模块：
+
+- 论文解析器（parser）
+- 叙事模板（story templates）
+- 视觉提示词包（prompt packs）
+- 事实校验器（evidence validators）
+- 排版主题（layout themes）
+
 ## License
 
 MIT
