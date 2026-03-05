@@ -1,1 +1,2 @@
 streamlit>=1.33,<2.0
+kreuzberg>=4.0.0
